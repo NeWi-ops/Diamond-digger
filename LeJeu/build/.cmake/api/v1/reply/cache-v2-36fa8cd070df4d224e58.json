@@ -1168,6 +1168,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/iwen/Documents/COURS IMAC/PROG-ALGO/S2/Diamond-digger/LeJeu"
+		},
+		{
+			"name" : "Phantom_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/iwen/Documents/COURS IMAC/PROG-ALGO/S2/Diamond-digger/LeJeu/build"
+		},
+		{
+			"name" : "Phantom_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Phantom_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/iwen/Documents/COURS IMAC/PROG-ALGO/S2/Diamond-digger/LeJeu"
 		}
 	],
 	"kind" : "cache",

@@ -221,6 +221,15 @@ Le Jeu_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Le Jeu_SOURCE_DIR:STATIC=/Users/iwen/Documents/COURS IMAC/PROG-ALGO/S2/Diamond-digger/LeJeu
 
+//Value Computed by CMake
+Phantom_BINARY_DIR:STATIC=/Users/iwen/Documents/COURS IMAC/PROG-ALGO/S2/Diamond-digger/LeJeu/build
+
+//Value Computed by CMake
+Phantom_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Phantom_SOURCE_DIR:STATIC=/Users/iwen/Documents/COURS IMAC/PROG-ALGO/S2/Diamond-digger/LeJeu
+
 
 ########################
 # INTERNAL cache entries
