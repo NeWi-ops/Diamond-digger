@@ -8,6 +8,11 @@ public:
     void genererCarte();
     void afficherCarte() const;
 
+    std::pair<int, int>& getPositionJoueur();
+    std::vector<std::vector<int>>& getCarte();
+    int getLargeur() const;
+    int getHauteur() const;
+
 
 
 private:

@@ -13,6 +13,7 @@ include_directories(src)
 set(SOURCES
     src/main.cpp
     src/MapGenerator.cpp
+    src/Joueur.cpp
     # Ajouter d'autres fichiers source nécessaires
 )
 

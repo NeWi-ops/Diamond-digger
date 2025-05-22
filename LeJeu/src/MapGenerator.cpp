@@ -6,10 +6,18 @@
 #include <random>
 #include <algorithm>
 
+
+
+
 MapGenerator::MapGenerator(int largeur, int hauteur)
     : m_largeur(largeur), m_hauteur(hauteur) {
     m_carte.resize(m_hauteur, std::vector<int>(m_largeur, 0));
 }
+
+std::pair<int, int>& MapGenerator::getPositionJoueur() { return m_positionJoueur; }
+std::vector<std::vector<int>>& MapGenerator::getCarte() { return m_carte; }
+int MapGenerator::getLargeur() const { return m_largeur; }
+int MapGenerator::getHauteur() const { return m_hauteur; }
 
 void MapGenerator::genererCarte() {
     std::srand(static_cast<unsigned int>(std::time(0)));
@@ -45,7 +53,7 @@ void MapGenerator::appliquerReglesAutomate() {
                     int nx = x + dx;
                     int ny = y + dy;
 
-                    if (nx >= 0 && nx < m_largeur && ny >= 0 && ny < m_hauteur) {
+                    if (nx >= 0 && nx < m_largeur && ny >= 0 && ny < m_hauteur) { //qd dx et dy = 0, est on compte la case elle même?
                         voisinsPlein += m_carte[ny][nx];
                     }
                 }
@@ -95,12 +103,12 @@ void MapGenerator::afficherCarte() const {
                 std::cout << "@ ";  // Joueur
             } else {
                 switch (m_carte[y][x]) {
-                    case 0: std::cout << ". "; break;
-                    case 1: std::cout << "# "; break;
-                    case 2: std::cout << "X "; break;
-                    case 3: std::cout << "* "; break;
-                    case 4: std::cout << "E "; break;
-                    default: std::cout << "? "; break;
+                    case 0: std::cout << ". "; break; //case vide
+                    case 1: std::cout << "# "; break; //case mur
+                    case 2: std::cout << "X "; break; //case piège
+                    case 3: std::cout << "* "; break; //case gemme
+                    case 4: std::cout << "E "; break; //case ennemi
+                    default: std::cout << "? "; break; 
                 }
             }
         }
