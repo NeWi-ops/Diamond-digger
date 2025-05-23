@@ -4,6 +4,8 @@ Sur un second temps, on s'est lancé pour mettre en place les mouvements du joue
 
 Les mouvement du joueur sont pour l'instant non fluide et demande à chaque fois d'appuyer sur entrée pour executer, mais le programme marche et le joueur est bloquer devant les obstacle. Le programme quitte lorsqu'on appuie sur 'a'
 
+Avec les librairie <termios>,<unustd> et <stdio> 
+
 Puis on mettra en place l'algorithme de "Dijkstra"  pour l'attaque des ennemis.
 ----> Amelioration à mettre en place: les ennemis bougent aléatoirement, il utilise l'algorithme pour attaquer que quand la distance qui leur sépare du joueur est < à 15.
 
